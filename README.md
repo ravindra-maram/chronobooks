@@ -65,7 +65,14 @@ ChronoBooks uses a cohesive color theme throughout the app for readability and a
 
 ## 📁 Project Structure
 
-ChronoBooks/ ├── ui/ # Wear OS optimized UIs ├── playback/ # ExoPlayer service & media session ├── data/ # Models, DTOs, and adapters ├── network/ # Retrofit API handlers ├── utils/ # Helper classes └── MainActivity.java # App entry point
+```plaintext
+ChronoBooks/
+├── ui/               # Wear OS optimized UIs
+├── playback/         # ExoPlayer service & media session
+├── data/             # Models, DTOs, and adapters
+├── network/          # Retrofit API handlers
+├── utils/            # Helper classes
+└── MainActivity.java # App entry point
 
 ## 📄 License
 
