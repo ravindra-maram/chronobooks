@@ -1,0 +1,14 @@
+/build
+
+# Android/Java
+.gradle/
+local.properties
+.idea/
+*.iml
+build/
+.DS_Store
+captures/
+*.log
+
+# Fonts & Drawable Backups
+*.bak
