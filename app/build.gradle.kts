@@ -40,4 +40,6 @@ dependencies {
     implementation(libs.wear)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.ui) // optional UI
 }
