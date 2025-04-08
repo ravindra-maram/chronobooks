@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="ChronoTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+</resources>
