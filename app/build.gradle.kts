@@ -38,4 +38,6 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.wear)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 }
