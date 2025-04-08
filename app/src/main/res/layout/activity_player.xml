@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/tvNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing..."
+        android:textColor="@color/dark_teal"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_medium" />
+</androidx.wear.widget.BoxInsetLayout>
