@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ChronoBooks Wear Theme -->
+    <style name="Theme.ChronoBooks" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/beige</item>
+        <item name="android:colorBackground">@color/beige</item>
+        <item name="android:textColor">@color/dark_teal</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

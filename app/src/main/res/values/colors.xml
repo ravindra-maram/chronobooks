@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dark_teal">#254D4D</color>
+<!--    <color name="dark_teal">#254D4D</color>-->
     <color name="gold_yellow">#D6A843</color>
-    <color name="beige">#F5F0E6</color>
+<!--    <color name="beige">#F5F0E6</color>-->
+    <color name="dark_grey">#2A2A2A</color>
+<!--    <color name="dark_teal">#008080</color>-->
+    <color name="off_white">#FFFCF8</color>
+    <color name="primary_dark">#202020</color>
+    <color name="accent_orange">#FF6C00</color>
 
+    <color name="dark_background">#121212</color>
+    <color name="title_white">#FFFFFF</color>
+    <color name="gray_light">#BBBBBB</color>
+    <color name="beige">#FAF6ED</color>
+    <color name="dark_teal">#014D40</color>
 </resources>

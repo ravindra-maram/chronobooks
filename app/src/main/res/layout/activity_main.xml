@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.wear.widget.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/beige">
 
-    <TextView
-        android:id="@+id/tvAppName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to ChronoBooks"
-        android:textColor="@color/dark_teal"
-        android:textSize="16sp"
-        android:fontFamily="@font/montserrat_medium"
-        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome...!"
+            android:textSize="14sp"
+            android:textColor="@color/dark_teal"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're in ChronoBooks"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_teal"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Listening 🎧"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/dark_teal"
+            android:minHeight="40dp"
+            android:minWidth="160dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
 </androidx.wear.widget.BoxInsetLayout>

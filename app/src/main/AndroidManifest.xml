@@ -1,31 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chronobooks">
 
+    <!-- Required for Wear OS -->
     <uses-feature android:name="android.hardware.type.watch" />
 
+    <!-- Network & Media Playback Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.DeviceDefault">
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Standalone app for Wear OS -->
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
-        <service android:name=".playback.PlaybackService"
-            android:exported="false"/>
 
+        <!-- Splash screen (launcher) -->
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true"
-            android:theme="@style/ChronoTheme">
+            android:theme="@style/Theme.ChronoBooks"
+            android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Register -->
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Main -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Audiobook List Screen (MISSING before) -->
+        <activity
+            android:name=".ui.AudiobookListActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Audiobook Detail Screen (MISSING before) -->
+        <activity
+            android:name=".ui.AudiobookDetailActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Player screen -->
+        <activity
+            android:name=".ui.PlayerActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:taskAffinity="" />
+
+        <!-- Foreground Playback Service with Notification -->
+        <service
+            android:name=".playback.PlaybackService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
     </application>
 
 </manifest>
