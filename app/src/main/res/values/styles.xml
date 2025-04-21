@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ChronoTheme" parent="Theme.MaterialComponents.DayNight">
-        <item name="android:fontFamily">@font/montserrat_medium</item>
+    <!-- Base Wear-compatible theme using Material -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/dark_teal</item>
+        <item name="colorAccent">@color/gold_yellow</item>
+        <item name="android:textColorPrimary">@color/dark_teal</item>
+        <item name="android:background">@color/beige</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 </resources>

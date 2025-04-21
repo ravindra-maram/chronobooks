@@ -1,41 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.wear.widget.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/loginScreen"
+<!--suppress WearableLayout -->
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/beige">
+    android:background="@color/beige"
+    android:padding="12dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:padding="12dp"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fillViewport="true">
 
-        <EditText
-            android:id="@+id/edtUsername"
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="text"
-            android:fontFamily="@font/montserrat_medium"/>
+            android:padding="10dp">
 
-        <EditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:fontFamily="@font/montserrat_medium"/>
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/chronobooks_logo"
+                android:contentDescription="@string/app_name" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_medium"/>
-    </LinearLayout>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:textColor="@color/dark_teal"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:scrollbars="none" />
+
+            <!-- ✅ Suppressed password field warning properly -->
+            <!--noinspection WearableLayout -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:textColor="@color/dark_teal"
+                android:textSize="12sp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"
+                android:scrollbars="none" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:minHeight="30dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="LOGIN"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/dark_teal"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No account?"
+                android:textSize="11sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/linkRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/dark_teal"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.wear.widget.BoxInsetLayout>
