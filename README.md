@@ -59,26 +59,26 @@ controls — all on your wrist.
 
 ChronoBooks/
 ├── app/
-│ └── src/main/java/com/example/chronobooks/
-│ ├── ui/ # Wear OS UIs (Login, Register, Player, List)
-│ ├── playback/ # ExoPlayer and resume logic
-│ ├── data/ # Models, DTOs (Audiobook, Chapter)
-│ ├── network/ # Retrofit interfaces
-│ ├── auth/ # AuthManager, JWT Storage
-│ ├── utils/ # TimeUtils, ImageUtils
-│ └── viewmodel/ # MVVM ViewModels
+│   └── src/main/java/com/example/chronobooks/
+│       ├── ui/ # Wear OS UIs (Login, Register, Player, List)
+│       ├── playback/ # ExoPlayer and resume logic
+│       ├── data/ # Models, DTOs (Audiobook, Chapter)
+│       ├── network/ # Retrofit interfaces
+│       ├── auth/ # AuthManager, JWT Storage
+│       ├── utils/ # TimeUtils, ImageUtils
+│       └── viewmodel/ # MVVM ViewModels
 │
 ├── res/
-│ ├── layout/ # XML Layouts
-│ ├── drawable/ # Button backgrounds, icons
-│ └── values/ # colors.xml, styles.xml, dimens.xml
+│   ├── layout/ # XML Layouts
+│   ├── drawable/ # Button backgrounds, icons
+│   └── values/ # colors.xml, styles.xml, dimens.xml
 │
 ├── backend/
-│ ├── server.js # Express Server Entry
-│ ├── routes/authRoutes.js # Login/Register Endpoints
-│ ├── controllers/ # AuthController.js
-│ ├── models/ # User.js
-│ └── .env # JWT_SECRET, PORT
+│   ├── server.js # Express Server Entry
+│   ├── routes/authRoutes.js # Login/Register Endpoints
+│   ├── controllers/ # AuthController.js
+│   ├── models/ # User.js
+│   └── .env # JWT_SECRET, PORT
 
 ### 🔐 Backend Setup
 
