@@ -56,7 +56,7 @@ controls — all on your wrist.
 - **CORS Enabled REST API**
 
 ## 📁 Project Structure
-
+````
 ChronoBooks/
 ├── app/
 │   └── src/main/java/com/example/chronobooks/
@@ -80,6 +80,7 @@ ChronoBooks/
 │   ├── models/ # User.js
 │   └── .env # JWT_SECRET, PORT
 
+````
 ### 🔐 Backend Setup
 
 1. Navigate to the backend directory:
@@ -141,10 +142,6 @@ combined with the focused experience of audiobook players like Audible.
 - 🧠 AI-powered audiobook recommendations
 - 🌐 Deezer OAuth integration for a richer content experience
 
-## 📦 Deliverables
-
-- ✅ `ChronoBooks.apk` – Ready-to-install Wear OS application.
-- ✅ `backend.zip` – Archive containing the Node.js server files.
 
 ## 🤝 Credits
 
